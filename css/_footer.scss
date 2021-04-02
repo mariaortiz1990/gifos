@@ -1,0 +1,61 @@
+@use 'variables';
+@use 'mixin';
+.footer-container {
+    width: 100%;
+    height: 116px;
+    max-width: $max-width2;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer {
+    width: 100%;
+    border-bottom: $color1 solid 5px;
+}
+footer .footer-container > div {
+    display: flex;
+    flex-direction: row;
+}
+.footer-redes-sociales {
+    display: flex;
+}
+footer p {
+    font-family: $font4;
+    font-size: 13px;
+    color: $color3;
+    padding-right: 17px;
+}
+#btn-facebook {
+    background-image: url(/img/icon_facebook.svg);
+    @include btn;
+    height: 20px;
+    width: 30px;
+    margin-right: 19px;
+    cursor: pointer;
+}
+#btn-facebook:hover {
+    background-image: url(/img/icon_facebook_hover.svg);
+}
+#btn-twitter {
+    background-image: url(/img/icon-twitter.svg);
+    @include btn;
+    height: 20px;
+    width: 30px;
+    margin-right: 19px;
+    cursor: pointer;
+}
+#btn-twitter:hover {
+    background-image: url(/img/icon-twitter-hover.svg);
+}
+#btn-instagram {
+    background-image: url(/img/icon_instagram.svg);
+    @include btn;
+    height: 20px;
+    width: 30px;
+    margin-right: 19px;
+    cursor: pointer;
+}
+#btn-instagram:hover {
+    background-image: url(/img/icon_instagram-hover.svg);
+}

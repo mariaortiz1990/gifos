@@ -1,0 +1,36 @@
+@use 'variables';
+@use 'mixin';
+
+#mis-gifos {
+    padding: 0 130px;
+}
+#img-mis-gifos {
+    margin: 10px auto;
+    margin-bottom: 0;
+    display: block;
+}
+#h2-mis-gifos {
+    padding-top: 8.1px;
+    @include title-h2;
+}
+#mis-gifos-no-result .img-no-result {
+    margin-top: 111px;
+}
+#mis-gifos-no-result {
+    text-align: center;
+    display: block;
+}
+#mis-gifos-no-result h4 {
+    @include title-h4;
+    margin-top: 40px;
+}
+#modal-zoom .btn-gif-trash {
+    background-image: url(/img/icon-trash-normal.svg);
+    position: static;
+    right: initial;
+    width: 36px;
+    height: 36px;
+    border: $color8 1px solid;
+    margin-left: 21px;
+    display: none;
+}

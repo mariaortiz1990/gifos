@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifos - Mis Gifos</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- NAV -->
+    <header>
+        <nav>
+            <a href="/">
+                <img id="img-logo" src="img/logo-desktop-modificado.svg" alt="logo" height="59,1px">
+            </a>
+            <input type="checkbox" class="burger-checkbox"/>
+            <button class="btn-burger"></button>
+            <button class="btn-burger-close"></button>
+            <div class="menu-main">
+                <a id="btn-options-nav" class="btn-dark btn-options-nav-dark" href="#"></a>
+                <a id="btn-options-nav" class="btn-options-nav-dark" href="/favoritos.html">FAVORITOS</a>
+                <a id="btn-options-nav" class="btn-options-nav-dark" href="/mis-gifos.html">MIS GIFOS</a>
+                <a id="btn-add" href="/crear-gifos.html"></a>
+            </div>
+        </nav>
+    </header>
+        <!-- MIS GIFOS -->
+    <section id="mis-gifos">
+        <img id="img-mis-gifos" src="/img/icon-mis-gifos.svg" alt="mis-gifos" height="21px">
+        <h2 id="h2-mis-gifos">Mis Gifos</h2>
+        <div id="mis-gifos-result"></div>
+        <div id="container-btn-ver-mas">
+            <button id="btn-ver-mas"></button>
+        </div>
+        <div id="mis-gifos-no-result">
+            <img class="img-no-result" src="/img/icon-mis-gifos-sin-contenido.svg" alt="sin-gifos-creados" height="150" width="151">
+            <h4>¡Anímate a crear tu primer GIFO!</h4>
+        </div>
+    </section>
+    <!-- TRENDING -->
+    <section id="container-trending">
+        <div>
+            <h2 class="h2-title" id="h2-trending">Trending GIFOS</h2>
+            <p id="p-giphy-trending-gifos">Mira los últimos GIFO de nuestra comunidad.</p>
+        </div>
+        <div id="container-gif">
+            <button id="btn-slider-left" class="btn-slider-left" disabled></button>
+            <div id="container-carousel">
+                <div id="gif-trending-embed"></div>
+            </div>
+            <button id="btn-slider-right" class="btn-slider-right"></button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <p>Compartir en:</p>
+                <div class="footer-redes-sociales">
+                    <a id="btn-facebook" href="https://www.facebook.com/" target="blank"></a>
+                    <a id="btn-twitter" href="https://twitter.com/?lang=es" target="blank"></a>
+                    <a id="btn-instagram" href="https://www.instagram.com/?hl=es-la" target="blank"></a>
+                </div>
+            </div>
+            <p>© GIFOS 2020 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- MAX GIF -->
+    <div id="modal-zoom">
+        <div id="container-zoom">
+            <button class="btn-close"></button>
+            <div>
+                <button class="btn-slider-left"></button>
+                <div id="container-gif-max">
+                <img src="" alt="" width="695" height="500">
+                </div>
+                <button class="btn-slider-right"></button>
+            </div>
+            <div id="container-title-btn">
+                <div>
+                    <h4></h4>
+                    <h5></h5>
+                </div>
+                <div>
+                    <button class="btn-gif-trash"></button>
+                    <button class="btn-gif-favorite"></button>
+                    <button class="btn-gif-download"></button>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script src="/js/common.js"></script>
+    <script src="/js/dark.js"></script>
+    <script src="/js/mis-gifos.js"></script>
+    <script src="/js/trending.js"></script>
+</body>
+</html>

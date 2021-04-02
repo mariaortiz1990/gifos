@@ -1,0 +1,195 @@
+@use 'variables';
+@use 'mixin';
+// XX-Large devices (larger desktops, 1400px and up)
+@media only screen and (max-width: 1400px) {}
+// X-Large devices (large desktops, 1200px and up)
+@media only screen and (max-width: 1200px) {}
+// Medium devices (tablets, 768px and up)
+@media only screen and (max-width: 768px) {
+    #mis-gifos,
+    #favoritos, 
+    #container-result {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #container-zoom {
+        width: 100%;
+    }
+    #container-zoom img {
+        width: 100%;
+        height: auto;
+    }
+    #container-title-btn {
+        width: auto;
+        margin-left: 29px;
+        margin-right: 29px;
+    }
+
+// Large devices (desktops, 992px and up)
+@media only screen and (max-width: 992px) {
+    #modal-zoom .btn-close {
+        margin-right: unset;
+        margin-top: -50px;
+        right: 34px;
+    }
+    #search-result,
+    #favoritos-result,
+    #mis-gifos-result {
+        grid-template-columns: 50% 50%;
+    }
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@media only screen and (max-width: 576px) {
+    nav #btn-options-nav {
+        font-size: 10px;
+    }
+
+    nav #btn-add {
+        display: none;
+    }
+
+    nav .burger-checkbox,
+    nav .btn-burger {
+        display: block;
+    }
+
+    nav .menu-main {
+        flex-direction: column;
+        position: absolute;
+        justify-content: flex-start;
+        top: 90px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        min-height: calc(100vh - 90px);
+        background-color: rgba(87, 46, 229, 0.9);
+        display: none;
+        padding-top: 17px;
+    }
+
+    .dark-mode nav .menu-main {
+        background-color: $color3;
+    }
+
+    nav .menu-main #btn-options-nav {
+        font-family: $font2;
+        font-size: 15px;
+        color: $color4;
+        text-align: center;
+        line-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    nav .menu-main #btn-options-nav::after {
+        content: '';
+        width: 70px;
+        height: 1px;
+        background-color: $color5;
+    }
+
+    nav .menu-main #btn-options-nav:hover {
+        border-bottom: none;
+    }
+
+    .burger-checkbox:checked~.menu-main {
+        display: flex;
+    }
+
+    .burger-checkbox:checked~.btn-burger-close {
+        display: block;
+    }
+
+    .burger-checkbox:checked~.btn-burger {
+        display: none;
+    }
+
+    .container-btn-search,
+    #container-header img,
+    nav #btn-add {
+        width: 100%;
+    }
+
+    #container-carousel {
+        width: 90%;
+    }
+
+    #container-header h1 {
+        font-size: 25px;
+    }
+
+    #container-header img {
+        max-width: 399px;
+    }
+
+    #search-result,
+    #favoritos-result,
+    #mis-gifos-result {
+        grid-template-columns: 100%;
+    }
+
+    .btn-gif-max {
+        display: none;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 196px;
+    }
+
+    footer .footer-container>div {
+        flex-direction: column;
+        height: 60px;
+        justify-content: space-between;
+    }
+
+    footer .footer-container>div p {
+        text-align: center;
+    }
+
+    #modal-zoom .btn-slider-left,
+    #modal-zoom .btn-slider-right {
+        display: none;
+    }
+
+    #container-zoom>div:first-of-type {
+        justify-content: center;
+    }
+
+    #container-title-btn h4 {
+        font-family: $font4;
+        font-size: 15px;
+        color: $color3;
+        text-align: left;
+        font-weight: 100;
+    }
+
+    #container-title-btn h5 {
+        font-family: $font2;
+        font-size: 13px;
+        color: $color3;
+        text-align: left;
+    }
+
+    #container-title-btn>div:first-child {
+        width: 70%;
+    }
+
+    #container-title-btn>div:last-child {
+        width: 30%;
+    }
+
+    #modal-zoom .btn-gif-trash,
+    #modal-zoom .btn-gif-favorite,
+    #modal-zoom .btn-gif-download {
+        margin-left: auto;
+    }
+}
+
+
+

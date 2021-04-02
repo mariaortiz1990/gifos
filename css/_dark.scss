@@ -1,0 +1,156 @@
+@use 'variables';
+@use 'mixin';
+
+.dark-mode,
+.dark-mode header,
+.dark-mode #ipt-search,
+.dark-mode #container-result-suggest,
+.dark-mode #modal-zoom {
+    background-color: $color9;
+}
+.dark-mode header {
+    border-top: $color3 5px solid;
+}
+.dark-mode nav .btn-burger {
+    background-image: url(/img/burger-modo-noct.svg);
+}
+.dark-mode nav .btn-burger-close {
+    background-image: url(/img/close-modo-noct.svg);
+}
+.dark-mode .btn-dark.btn-options-nav-dark::before {
+    content: "MODO DIURNO"
+}
+.dark-mode #container-trending {
+    background-color: $color10;
+}
+.dark-mode #img-logo {
+    box-sizing: border-box;
+    display: block;
+    height: 59.1px;
+    width: 62.5px;
+    padding-left: 62.5px;
+    background: url(/img/Logo-modo-noc-modificado.svg) no-repeat;
+}
+.dark-mode #btn-options-nav, .dark-mode #h1-main, .dark-mode #h3-trending, 
+.dark-mode #p-giphy-suggest-trending, .dark-mode .h2-title, .dark-mode #p-giphy-trending-gifos, 
+.dark-mode footer p, .dark-mode #modal-zoom #container-title-btn div h4, 
+.dark-mode #modal-zoom #container-title-btn div h5, .dark-mode #h2-favoritos, .dark-mode #h2-mis-gifos,
+.dark-mode #create-gifo-container #video-time, .dark-mode #video-message p{
+    color: $color4;
+}
+.dark-mode #btn-add {
+    background-image: url(/img/CTA-crear-gifo-modo-noc.svg);
+}
+.dark-mode #btn-add:hover {
+    background-image: url(/img/CTA-crar-gifo-modo-noc.svg);
+}
+.dark-mode #btn-add:active {
+    background-image: url(/img/CTA-crear-gifo-active-modo-noc.svg);
+}
+.dark-mode #ipt-search {
+    color: $color5;
+}
+.dark-mode .btn-search {
+    background-image: url(/img/icon-search-mod-noc.svg);
+}
+.dark-mode .btn-close {
+    background-image: url(/img/Button-close-modo-noc.svg);
+}
+.dark-mode .btn-close:hover {
+    background-image: url(/img/Button-close-hover-modo-noc.svg);
+}
+.dark-mode .container-btn-search, .dark-mode #container-result-suggest {
+    border: $color4 1px solid;
+}
+.dark-mode #container-result-suggest {
+    border-top: none;
+}
+.dark-mode .no-bottom-border {
+    border-bottom: none;
+}
+.dark-mode #line {
+    border: $color4 solid 1px;
+    opacity: 1;
+}
+.dark-mode #btn-ver-mas {
+    background-image: url(/img/CTA-ver+-modo-noc.svg);
+}
+.dark-mode #btn-ver-mas:hover {
+    background-image: url(/img/CTA-ver+hover-modo-noc.svg);
+}
+.dark-mode #btn-slider-left, .dark-mode #modal-zoom .btn-slider-left {
+    background-image: url(/img/button-slider-left-md-noct.svg);
+}
+.dark-mode #btn-slider-right, .dark-mode #modal-zoom .btn-slider-right {
+    background-image: url(/img/button-slider-right-md-noct.svg);
+}
+.dark-mode footer {
+    border-bottom: $color3 solid 5px;
+}
+.dark-mode #btn-facebook:hover {
+    background-image: url(/img/icon_facebook_noc.svg);
+}
+.dark-mode #btn-twitter:hover {
+    background-image: url(/img/icon_twitter_noc.svg);
+}
+.dark-mode #btn-instagram:hover {
+    background-image: url(/img/icon_instagram_noc.svg);
+}
+.dark-mode #create-gifo-container .create-gifo-camara {
+    box-sizing: border-box;
+    display: block;
+    height: 151.45px;
+    width: 115px;
+    padding-left: 115px;
+    background: url(/img/camara-modo-noc.svg) no-repeat;
+}
+.dark-mode #create-gifo-container #step-one {
+    background: url(/img/paso-a-paso-1-mod-noc.svg);
+}
+.dark-mode #create-gifo-container #step-one.active {
+    background: url(/img/paso-a-paso-1-hover-mod-noc.svg);
+}
+.dark-mode #create-gifo-container #step-two {
+    background: url(/img/paso-a-paso-2-mod-noc.svg);
+}
+.dark-mode #create-gifo-container #step-two.active {
+    background: url(/img/paso-a-paso-2-hover-mod-noc.svg);
+}
+.dark-mode #create-gifo-container #step-three {
+    background: url(/img/paso-a-paso-3-mod-noc.svg);
+}
+.dark-mode #create-gifo-container #step-three.active {
+    background: url(/img/paso-a-paso-3-hover-mod-noc.svg);
+}
+.dark-mode #create-gifo-container #cell6 img{
+    box-sizing: border-box;
+    display: block;
+    height: 87px;
+    width: 140.38px;
+    padding-left: 140.38px;
+    background: url(/img/pelicula-modo-noc.svg) no-repeat;
+}
+.dark-mode #create-gifo-container #crear-gifo-comenzar {
+    background: url(/img/CTA-comenzar-modo-noc.svg)
+}
+.dark-mode #create-gifo-container #crear-gifo-comenzar:hover {
+    background: url(/img/CTA-comenzar-hover-modo-noc.svg)
+}
+.dark-mode #create-gifo-container #crear-gifo-grabar {
+    background-image: url(/img/CTA-GRABAR-modo-noc.svg);
+}
+.dark-mode #create-gifo-container #crear-gifo-grabar:hover {
+    background-image: url(/img/CTA-grabar-hover-modo-noc.svg);
+}
+.dark-mode #create-gifo-container #crear-gifo-finalizar {
+    background-image: url(/img/CTA-finalizar-modo-noc.svg);
+}
+.dark-mode #create-gifo-container #crear-gifo-finalizar:hover {
+    background-image: url(/img/CTA-finalizar-hover-modo-noc.svg);
+}
+.dark-mode #create-gifo-container #crear-gifo-subir {
+    background-image: url(/img/CTA-subir-modo-noc.svg);
+}
+.dark-mode #create-gifo-container #crear-gifo-subir:hover {
+    background-image: url(/img/CTA-subir-hover-modo-noc.svg);
+}

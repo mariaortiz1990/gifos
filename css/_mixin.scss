@@ -1,0 +1,56 @@
+@use 'variables';
+
+@mixin title-h1 {
+    font-family: $font2, serif;
+    font-size: 35px;
+    color: $color1;
+}
+@mixin options-nav {
+    font-family: $font2, serif;
+    font-size: 13px;
+    color: $color1;
+}
+@mixin border-main-color {
+    border: $color1 1px solid;
+}
+@mixin title-h3 {
+    font-family: $font2, serif;
+    font-size: 18px;
+    color: $color1;
+    text-align: center;
+}
+@mixin title-h2 {
+    font-family: $font2, serif;
+    font-size: 25px;
+    color: $color1;
+    text-align: center;
+}
+@mixin title-h4 {
+    font-family: $font2, serif;
+    font-size: 22px;
+    color: $color2;
+    text-align: center;
+}
+@mixin btn {
+    background-repeat:no-repeat;
+    background-position:center;
+    border: none;
+    outline-style: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+@mixin btn-gif-hover {
+    width: 32px;
+    height: 32px;
+    background-repeat:no-repeat;
+    background-position:center;
+    border: none;
+    outline-style: none;
+    background-color: $color4;
+    border-radius: 6px;
+    opacity: 70%;
+    margin-left: 10px;
+}
+@mixin mobile-container {
+    padding: 0 10px;
+}

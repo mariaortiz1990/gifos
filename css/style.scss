@@ -1,0 +1,213 @@
+@import 'variables';
+@import 'mixin';
+@import 'reset';
+@import 'fonts';
+@import 'header';
+@import 'favoritos';
+@import 'mis-gifos';
+@import 'crear-gifos';
+@import 'searching';
+@import 'trending';
+@import 'footer';
+@import 'overrides';
+
+section {
+    @include mobile-container;
+}
+
+#search-result, #favoritos-result, #mis-gifos-result {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 59px;
+    max-width: $max-width;
+}
+.card-frame {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+#gif-trending-embed .card-frame {
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card-frame img{
+    height: 100%;
+    min-width:100%;
+    max-width:none;
+    margin:0 -100%;
+}
+.containerGif {
+    opacity: 0.1%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.containerGif:hover {
+    opacity: 100%;
+    background-color: $color7;
+}
+.containerGif .container-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.btn-gif-favorite {
+    background-image: url(/img/icon-fav.svg);
+    @include btn-gif-hover;
+    cursor: pointer;
+}
+.btn-gif-trash {
+    background-image: url(/img/icon-trash-normal.svg);
+    @include btn-gif-hover;
+    cursor: pointer;
+}
+.card-frame .btn-gif-favorite:active {
+    background-image: url(/img/icon-fav-active.svg);
+}
+.btn-gif-favorite:hover, 
+.btn-gif-download:hover, 
+.btn-gif-max:hover,
+.btn-gif-trash:hover  {
+    opacity: 100%;
+}
+.btn-gif-favorite-added {
+    background-image: url(/img/icon-fav-active.svg);
+    opacity: 1;
+}
+.btn-gif-download {
+    background-image: url(/img/icon-download.svg);
+    @include btn-gif-hover;
+    cursor: pointer;
+}
+.btn-gif-max {
+    background-image: url(/img/icon-max-normal.svg);
+    @include btn-gif-hover;
+    cursor: pointer;
+}
+.name-gif, .user-gif {
+    position: absolute;
+    color:$color4;
+    text-align: left;
+    margin-left: 18.5px;
+}
+.user-gif {
+    font-family: $font4;
+    font-size: 15px;
+    top: 181px;
+}
+#favoritos .user-gif, 
+#search-result .user-gif,
+#mis-gifos-result .user-gif  {
+    top: 132px;
+}
+#container-result .user-gif {
+    top: 132px;
+}
+.name-gif {
+    font-family: $font6;
+    font-size: 16px;
+    top: 205px;
+    text-transform: uppercase;
+}
+#favoritos .name-gif, #container-result .name-gif {
+    top: 154px;
+}
+#container-btn-ver-mas {
+    width: 100%;
+}
+#btn-ver-mas {
+    background-image: url(/img/CTA-ver-mas.svg);
+    width: 127px;
+    height: 50px;
+    margin: 78px auto;
+    display: none;
+    cursor: pointer;
+    @include btn;
+    text-align: center;
+}
+#modal-zoom {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $color4;
+    display: none;
+    z-index: 1001;
+}
+#modal-zoom .btn-close {
+    height: 20px;
+    width: 15.2px;
+    margin-right: -20px;
+    @include btn;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 5%;
+}
+#container-zoom {
+    width: 847px;
+    margin: 0 auto;
+    position: relative;
+}
+#container-zoom > div:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#container-title-btn h4, #container-title-btn h5 {
+    color: $color3;
+}
+#container-title-btn h4 {
+    font-family: $font4;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+#container-title-btn h5 {
+    font-family: $font6;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 6px;
+}
+#modal-zoom .btn-gif-favorite {
+    position: static;
+    right: initial;
+}
+#modal-zoom .btn-gif-download {
+    position: static;
+    right: initial;
+}
+#container-title-btn {
+    display: flex;
+    width: 695px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 27px;
+}
+#modal-zoom .btn-gif-favorite, #modal-zoom .btn-gif-download {
+    width: 36px;
+    height: 36px;
+    border: $color8 1px solid;
+    margin-left: 21px;
+}
+#modal-zoom #container-gif-max {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
+@import 'mobile';
+@import 'dark';

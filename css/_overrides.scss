@@ -1,0 +1,12 @@
+@use 'variables';
+@use 'mixin';
+
+.btn-close {
+    background-image: url(/img/close.svg);
+}
+.search-background-gray {
+    background-image: url(/img/icon-search-gray.svg);
+}
+.btn-background-none {
+    background-image: none;
+}

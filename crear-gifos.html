@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifos - Crear Gifos</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- NAV -->
+    <header>
+        <nav>
+            <a href="/">
+                <img id="img-logo" src="img/logo-desktop-modificado.svg" alt="logo" height="59,1px">
+            </a>
+            <input type="checkbox" class="burger-checkbox"/>
+            <button class="btn-burger"></button>
+            <button class="btn-burger-close"></button>
+            <div class="menu-main">
+                <a id="btn-options-nav" class="btn-dark btn-options-nav-dark" href="#"></a>
+                <a id="btn-options-nav" class="btn-options-nav-dark" href="/favoritos.html">FAVORITOS</a>
+                <a id="btn-options-nav" class="btn-options-nav-dark" href="/mis-gifos.html">MIS GIFOS</a>
+                <a id="btn-add" href="/crear-gifos.html"></a>
+            </div>
+        </nav>
+    </header>
+    <!-- CREAR GIFOS -->
+    <main>
+        <div id="create-gifo-container">
+            <div id="container-grid">
+                <div id="cell1">
+                    <img class="create-gifo-camara" src="/img/camara.svg" alt="camara" width="115">
+                    <img src="/img/element-luz-camara.svg" alt="camara" width="91">
+                </div>
+                <div id="cell2">
+                    <div>
+                        <div class="top-corner-left"></div>
+                        <div class="bottom-corner-left"></div>
+                    </div>
+                    <div id="video-container">
+                        <div id="video-message">
+                            <h2 class="h2-title">Aquí podrás <br>crear tus propios <span>GIFOS</span> </h2>
+                            <p>¡Crea tu GIFO en sólo 3 pasos! <br>(sólo necesitas una cámara para grabar un video)</p>
+                        </div>
+                        <div id="video-hover">
+                            <img src="/img/loader.svg" alt="loading" id="create-gifo-loader">
+                            <p>Estamos subiendo tu GIFO</p>
+                            <div class="btn-hover-container">
+                                <button id="create-gifo-download"></button>
+                                <button id="create-gifo-compartir"></button>
+                            </div>
+                        </div>
+                        <video src=""></video>
+                    </div>
+                    <div>
+                        <div class="top-corner-right"></div>
+                        <div class="bottom-corner-right"></div>
+                    </div>
+                </div>
+                <div id="cell5">
+                    <button id="step-one"></button>
+                    <button id="step-two"></button>
+                    <button id="step-three"></button>
+                </div>
+                <div id="video-time">
+                    <label id="hours"></label>
+                    <label>:</label>
+                    <label id="minutes"></label>
+                    <label>:</label>
+                    <label id="seconds"></label>
+                </div>
+                <button id="btn-repetir">REPETIR CAPTURA</button>
+                <div id="cell6">
+                    <img src="/img/pelicula.svg" alt="pelicula" height="87">
+                </div>
+            </div>
+            <div id="sep"></div>
+            <button id="crear-gifo-comenzar"></button>
+            <button id="crear-gifo-grabar"></button>
+            <button id="crear-gifo-finalizar"></button>
+            <button id="crear-gifo-subir"></button>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div>
+                <p>Compartir en:</p>
+                <div class="footer-redes-sociales">
+                    <a id="btn-facebook" href="https://www.facebook.com/" target="blank"></a>
+                    <a id="btn-twitter" href="https://twitter.com/?lang=es" target="blank"></a>
+                    <a id="btn-instagram" href="https://www.instagram.com/?hl=es-la" target="blank"></a>
+                </div>
+            </div>
+            <p>© GIFOS 2020 All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="/js/common.js"></script>
+    <script src="/js/dark.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="/js/crear-gifos.js"></script>
+</body>
+</html>

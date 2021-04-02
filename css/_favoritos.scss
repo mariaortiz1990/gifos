@@ -1,0 +1,26 @@
+@use 'variables';
+@use 'mixin';
+
+#favoritos {
+    padding: 0 130px;
+}
+#img-favoritos {
+    margin: 11px auto;
+    margin-bottom: 0;
+    display: block;
+}
+#h2-favoritos {
+    padding-top: 8px;
+    @include title-h2;
+}
+#favoritos-no-result .img-no-result {
+    margin-top: 109.3px;
+}
+#favoritos-no-result {
+    text-align: center;
+    display: block;
+}
+#favoritos-no-result h4 {
+    @include title-h4;
+    margin-top: 23.7px;
+}

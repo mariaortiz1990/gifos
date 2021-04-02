@@ -1,0 +1,97 @@
+@use 'variables';
+@use 'mixin';
+
+header {
+    border-top: $color1 solid 5px;
+    position: sticky;
+    top: 0px;
+    background-color: $color4;
+    z-index: 1000;
+}
+nav {
+    height: 90px;
+    width: 100%;
+    max-width: $max-width2;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    @include mobile-container;
+}
+#img-logo {
+    margin-top: 23px;
+    @include btn;
+}
+nav .burger-checkbox,
+nav .btn-burger,
+nav .btn-burger-close {
+    position: absolute;
+    right: 26px;
+    top:47px;
+}
+nav .burger-checkbox {
+    height: 20px;
+    width: 20px;
+    z-index: 1;
+    margin: 0;
+    opacity: 0;
+    display: none;
+}
+nav .btn-burger, nav .btn-burger-close  {
+    display: none;
+    height: 20px;
+    width: 20px;
+    @include btn;
+}
+nav .btn-burger {
+    background-image: url(/img/burger.svg);
+}
+nav .btn-burger-close {
+    background-image: url(/img/close.svg);
+}
+nav .menu-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav #nav-search {
+    align-self: center;
+    width: 334px;
+}
+nav #nav-search #container-btn-search {
+    width: 100%;
+    display: none;
+    visibility: hidden;
+}
+.btn-dark.btn-options-nav-dark::before {
+    content: "MODO NOCTURNO"
+}
+#btn-options-nav {
+    @include options-nav;
+    text-decoration: none;
+    margin: 0 10px;
+}
+#btn-options-nav:hover {
+    font-family: $font6;
+    border-bottom: $color2 2px solid;
+    padding-left: 0;
+    padding-right: 0;
+}
+#btn-options-nav:active {
+    color: $color5;
+    text-decoration: none;
+    border-bottom: none;
+}
+#btn-add {
+    height: 54px;
+    width: 54px;
+    background-image: url(/img/button-crear-gifo.svg);
+    @include btn;
+    cursor: pointer;
+}
+#btn-add:hover {
+    background-image: url(/img/CTA-crear-gifo-hover.svg);
+}
+#btn-add:active {
+    background-image: url(/img/CTA-crear-gifo-active.svg);
+}

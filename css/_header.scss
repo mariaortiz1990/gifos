@@ -66,18 +66,18 @@ nav #nav-search #container-btn-search {
 .btn-dark.btn-options-nav-dark::before {
     content: "MODO NOCTURNO"
 }
-#btn-options-nav {
+.btn-options-nav {
     @include options-nav;
     text-decoration: none;
     margin: 0 10px;
 }
-#btn-options-nav:hover {
+.btn-options-nav:hover {
     font-family: $font6;
     border-bottom: $color2 2px solid;
     padding-left: 0;
     padding-right: 0;
 }
-#btn-options-nav:active {
+.btn-options-nav:active {
     color: $color5;
     text-decoration: none;
     border-bottom: none;

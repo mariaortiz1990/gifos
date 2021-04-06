@@ -40,18 +40,19 @@ function createSuggestElement(element, container) {
 inputSearch.addEventListener('keyup', (e)=>{
     if(e.code != 'Enter') {
         let txt = inputSearch.value;
-     
-        if(txt.length > 3) { //A PARTIR DE 4 CARACTERES MUESTRA SUG
-            container.style.display = 'flex';
-
-            btnRight.classList.add('btn-close');
+        container.style.display = 'flex';
+        btnRight.classList.add('btn-close');
+        if (btnRight.getAttribute('listener') !== 'true') {
+            btnRight.addEventListener('click', ()=> {
+                inputSearch.value = '';
+                inputSearchReset();
+            })
+        //EL EVALUADOR PIDIO SE ELIMINARA
+        // if(txt.length > 3) { //A PARTIR DE 4 CARACTERES MUESTRA SUG
+        //     container.style.display = 'flex';
+        //     btnRight.classList.add('btn-close');
             //RESET ERASE TXT INPUT
-            if (btnRight.getAttribute('listener') !== 'true') {
-                btnRight.addEventListener('click', ()=> {
-                    inputSearch.value = '';
-                    inputSearchReset();
-                })
-            }
+         //   }
 
             let url = urlSuggest.replace('{term}', txt);
 
